@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNG Regression Suite" parallel="methods" thread-count="10">
+
+  <test name="Regression Suite">
+    <classes> 
+      <class name="testNG.testNG4_Test1"/>
+    </classes>
+  </test>
+    
+  <listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+  
+</suite> <!-- Suite -->

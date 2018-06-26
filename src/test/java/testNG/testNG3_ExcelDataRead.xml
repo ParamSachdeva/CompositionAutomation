@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNG Regression Suite" parallel="false" thread-count="2">
+<parameter name="browser" value="firefox" />
+
+  <test name="Paytm Regression Suite">
+    <classes> 
+      <class name="testNG.testNG3_ExcelDataRead"/>
+    </classes>
+  </test>
+  
+  <listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+  
+</suite> 

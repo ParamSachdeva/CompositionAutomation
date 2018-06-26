@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNG Regression Suite" parallel="false" thread-count="2">
+<parameter name="browser" value="firefox" />
+
+
+
+
+<!-- Pass/Failed/skip concepts for test NG -->
+  <test name="Paytm Regression Suite">
+    <classes> 
+      <class name="testNG.testNG2_Test1"/>
+    </classes>
+  </test> <!-- Test1 -->
+  
+   <test name="IFSC Regression Suite">
+    <classes> 
+      <class name="testNG.testNG2_Test2"/>
+    </classes>
+  </test> <!-- Test2 -->
+  
+  <listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+  
+</suite> <!-- Suite -->

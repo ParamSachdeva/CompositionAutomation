@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNG Grid Regression Suite" parallel="test">
+
+
+ <test name="FirefoxTest">
+   <parameter name="browser" value="firefox" />
+      <classes>
+         <class name="testNG.GridtestNG2" />
+      </classes>
+   </test>
+
+   <test name="ChromeTest">
+   <parameter name="browser" value="chrome" />
+      <classes>
+         <class name="testNG.GridtestNG2" />
+      </classes>
+   </test>
+
+   <test name="IETest">
+   <parameter name="browser" value="ie" />
+      <classes>
+         <class name="testNG.GridtestNG2" />
+      </classes>
+   </test>
+   
+  <listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+  
+</suite> <!-- Suite -->

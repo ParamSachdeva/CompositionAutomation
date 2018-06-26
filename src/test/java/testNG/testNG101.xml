@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestNG Regression Suite" parallel="methods" thread-count="2">
+<!-- Just a simple architecture for test NG -->	
+  <test name="TestNG Regression Suite">
+    <classes> 
+      <class name="testNG.testNG1_Test1"/>
+      <class name="testNG.testNG1_Test2"/>
+      <class name="testNG.testNG1_Test3"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+  
+</suite> <!-- Suite -->
